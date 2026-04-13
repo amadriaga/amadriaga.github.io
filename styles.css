@@ -39,71 +39,74 @@ body {
 header {
     background-color: #ffffff;
     color: var(--text-color);
-    padding: 48px 24px 40px;
+    padding: 60px 24px 50px;
     text-align: center;
-    border-bottom: 3px solid var(--primary-color);
-    box-shadow: var(--shadow-sm);
+    border-bottom: 1px solid var(--border-color);
 }
 
 header h1 {
     font-family: 'Crimson Pro', Georgia, serif;
-    font-size: 2.5rem;
+    font-size: 2.75rem;
     font-weight: 600;
-    margin-bottom: 6px;
-    letter-spacing: -0.015em;
-    color: #1a202c;
+    margin-bottom: 12px;
+    letter-spacing: -0.02em;
+    color: #0f172a;
 }
 
 .tagline {
-    font-size: 1rem;
-    font-weight: 500;
-    margin-bottom: 20px;
-    letter-spacing: 0.01em;
-    color: #2d3748;
+    font-size: 1.05rem;
+    font-weight: 400;
+    margin-bottom: 24px;
+    letter-spacing: 0.03em;
+    color: #475569;
+    text-transform: uppercase;
+    font-size: 0.85rem;
 }
 
 .social-links {
     display: flex;
-    gap: 14px;
+    gap: 16px;
     justify-content: center;
     flex-wrap: wrap;
 }
 
 .social-links a {
-    color: #1a365d;
+    color: #1e293b;
     text-decoration: none;
-    padding: 8px 20px;
-    border: 2px solid #1a365d;
-    border-radius: 4px;
-    font-weight: 600;
-    font-size: 0.9rem;
-    transition: all 0.2s ease;
+    padding: 10px 28px;
+    border: 1.5px solid #cbd5e1;
+    border-radius: 2px;
+    font-weight: 500;
+    font-size: 0.88rem;
+    letter-spacing: 0.015em;
+    transition: all 0.25s ease;
     background-color: transparent;
 }
 
 .social-links a:hover {
-    background-color: #1a365d;
+    background-color: #1e293b;
     color: white;
-    transform: translateY(-1px);
+    border-color: #1e293b;
 }
 
 /* Main Content */
 main {
-    padding: 40px 24px;
+    padding: 50px 24px;
 }
 
 section {
-    margin-bottom: 40px;
+    margin-bottom: 50px;
 }
 
 h2 {
     font-family: 'Crimson Pro', Georgia, serif;
-    font-size: 1.75rem;
+    font-size: 1.85rem;
     font-weight: 600;
-    color: var(--primary-color);
-    margin-bottom: 20px;
-    padding-bottom: 10px;
-    border-bottom: 2px solid var(--primary-color);
+    color: #0f172a;
+    margin-bottom: 24px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid #e2e8f0;
+    letter-spacing: -0.015em;
 }
 
 h3 {
@@ -122,9 +125,16 @@ p {
 }
 
 /* About Section */
+#about {
+    max-width: 750px;
+    margin: 0 auto 40px;
+}
+
 #about p {
-    font-size: 0.97rem;
-    line-height: 1.7;
+    font-size: 1rem;
+    line-height: 1.75;
+    color: #334155;
+    margin-bottom: 16px;
 }
 
 /* Skills Grid */
