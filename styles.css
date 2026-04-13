@@ -37,11 +37,11 @@ body {
 
 /* Header */
 header {
-    background-color: #faf8ff;
-    color: var(--text-color);
+    background-color: #0f172a;
+    color: white;
     padding: 70px 24px 50px;
     text-align: center;
-    border-bottom: 1px solid #e9d5ff;
+    border-bottom: 3px solid #1e293b;
 }
 
 header h1 {
@@ -50,7 +50,7 @@ header h1 {
     font-weight: 600;
     margin-bottom: 8px;
     letter-spacing: -0.025em;
-    color: #0f172a;
+    color: #ffffff;
 }
 
 .tagline {
@@ -58,7 +58,7 @@ header h1 {
     font-weight: 400;
     margin-bottom: 28px;
     letter-spacing: 0.02em;
-    color: #475569;
+    color: #cbd5e1;
 }
 
 .social-links {
@@ -69,22 +69,22 @@ header h1 {
 }
 
 .social-links a {
-    color: #6366f1;
+    color: #ffffff;
     text-decoration: none;
     padding: 9px 26px;
-    border: 1px solid #c7d2fe;
+    border: 1px solid #475569;
     border-radius: 3px;
     font-weight: 500;
     font-size: 0.87rem;
     letter-spacing: 0.01em;
     transition: all 0.2s ease;
-    background-color: #eef2ff;
+    background-color: transparent;
 }
 
 .social-links a:hover {
-    background-color: #6366f1;
-    color: white;
-    border-color: #6366f1;
+    background-color: #ffffff;
+    color: #0f172a;
+    border-color: #ffffff;
 }
 
 /* Main Content */
