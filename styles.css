@@ -1,14 +1,17 @@
 /* Global Styles */
 :root {
-    --primary-color: #2563eb;
-    --secondary-color: #1e40af;
-    --text-color: #1f2937;
-    --text-light: #6b7280;
+    --primary-color: #1a365d;
+    --primary-light: #2c5282;
+    --accent-color: #2b6cb0;
+    --text-color: #1a202c;
+    --text-light: #4a5568;
+    --text-lighter: #718096;
     --bg-color: #ffffff;
-    --bg-gray: #f9fafb;
-    --border-color: #e5e7eb;
-    --shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
-    --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    --bg-gray: #f7fafc;
+    --border-color: #e2e8f0;
+    --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.04);
+    --shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.06), 0 1px 2px 0 rgba(0, 0, 0, 0.03);
+    --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.08), 0 2px 4px -1px rgba(0, 0, 0, 0.04);
 }
 
 * {
@@ -18,45 +21,48 @@
 }
 
 body {
-    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-    line-height: 1.7;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    line-height: 1.6;
     color: var(--text-color);
     background-color: var(--bg-color);
+    font-size: 15px;
 }
 
 /* Container */
 .container {
-    max-width: 1000px;
+    max-width: 900px;
     margin: 0 auto;
-    padding: 0 20px;
+    padding: 0 24px;
 }
 
 /* Header */
 header {
-    background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+    background: linear-gradient(135deg, var(--primary-color) 0%, var(--primary-light) 100%);
     color: white;
-    padding: 80px 20px 60px;
+    padding: 48px 24px 40px;
     text-align: center;
-    box-shadow: var(--shadow-lg);
+    border-bottom: 3px solid var(--accent-color);
 }
 
 header h1 {
-    font-size: 3rem;
-    font-weight: 700;
-    margin-bottom: 10px;
-    letter-spacing: -0.02em;
+    font-family: 'Crimson Pro', Georgia, serif;
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-bottom: 6px;
+    letter-spacing: -0.015em;
 }
 
 .tagline {
-    font-size: 1.25rem;
-    font-weight: 300;
-    opacity: 0.95;
-    margin-bottom: 30px;
+    font-size: 1rem;
+    font-weight: 400;
+    opacity: 0.92;
+    margin-bottom: 20px;
+    letter-spacing: 0.01em;
 }
 
 .social-links {
     display: flex;
-    gap: 20px;
+    gap: 14px;
     justify-content: center;
     flex-wrap: wrap;
 }
@@ -64,83 +70,87 @@ header h1 {
 .social-links a {
     color: white;
     text-decoration: none;
-    padding: 10px 24px;
-    border: 2px solid rgba(255, 255, 255, 0.3);
-    border-radius: 8px;
+    padding: 8px 20px;
+    border: 1.5px solid rgba(255, 255, 255, 0.4);
+    border-radius: 4px;
     font-weight: 500;
-    transition: all 0.3s ease;
-    background-color: rgba(255, 255, 255, 0.1);
+    font-size: 0.9rem;
+    transition: all 0.2s ease;
+    background-color: rgba(255, 255, 255, 0.08);
 }
 
 .social-links a:hover {
-    background-color: rgba(255, 255, 255, 0.2);
-    border-color: rgba(255, 255, 255, 0.5);
-    transform: translateY(-2px);
+    background-color: rgba(255, 255, 255, 0.18);
+    border-color: rgba(255, 255, 255, 0.6);
+    transform: translateY(-1px);
 }
 
 /* Main Content */
 main {
-    padding: 60px 20px;
+    padding: 40px 24px;
 }
 
 section {
-    margin-bottom: 60px;
+    margin-bottom: 40px;
 }
 
 h2 {
-    font-size: 2rem;
-    font-weight: 700;
-    color: var(--text-color);
-    margin-bottom: 30px;
-    padding-bottom: 15px;
-    border-bottom: 3px solid var(--primary-color);
+    font-family: 'Crimson Pro', Georgia, serif;
+    font-size: 1.75rem;
+    font-weight: 600;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid var(--primary-color);
 }
 
 h3 {
-    font-size: 1.5rem;
+    font-family: 'Crimson Pro', Georgia, serif;
+    font-size: 1.15rem;
     font-weight: 600;
     color: var(--text-color);
-    margin-bottom: 10px;
+    margin-bottom: 6px;
 }
 
 p {
-    margin-bottom: 15px;
-    font-size: 1.05rem;
+    margin-bottom: 12px;
+    font-size: 0.95rem;
     color: var(--text-color);
+    line-height: 1.65;
 }
 
 /* About Section */
 #about p {
-    font-size: 1.1rem;
-    line-height: 1.8;
+    font-size: 0.97rem;
+    line-height: 1.7;
 }
 
 /* Skills Grid */
 .skills-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 30px;
-    margin-top: 30px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 18px;
+    margin-top: 20px;
 }
 
 .skill-category {
     background-color: var(--bg-gray);
-    padding: 25px;
-    border-radius: 12px;
+    padding: 18px;
+    border-radius: 6px;
     border: 1px solid var(--border-color);
-    transition: all 0.3s ease;
+    transition: all 0.2s ease;
 }
 
 .skill-category:hover {
-    box-shadow: var(--shadow-lg);
-    transform: translateY(-4px);
-    border-color: var(--primary-color);
+    box-shadow: var(--shadow-md);
+    transform: translateY(-2px);
+    border-color: var(--accent-color);
 }
 
 .skill-category h3 {
-    font-size: 1.2rem;
+    font-size: 1rem;
     color: var(--primary-color);
-    margin-bottom: 15px;
+    margin-bottom: 12px;
 }
 
 .skill-category ul {
@@ -148,34 +158,34 @@ p {
 }
 
 .skill-category li {
-    padding: 8px 0;
+    padding: 5px 0;
     color: var(--text-color);
-    font-size: 0.95rem;
+    font-size: 0.88rem;
     position: relative;
-    padding-left: 20px;
+    padding-left: 16px;
 }
 
 .skill-category li:before {
-    content: "→";
+    content: "•";
     position: absolute;
     left: 0;
-    color: var(--primary-color);
-    font-weight: 600;
+    color: var(--accent-color);
+    font-weight: 700;
 }
 
 /* Experience Section */
 .job {
-    margin-bottom: 40px;
-    padding: 30px;
+    margin-bottom: 30px;
+    padding: 20px;
     background-color: var(--bg-gray);
-    border-radius: 12px;
-    border-left: 4px solid var(--primary-color);
-    transition: all 0.3s ease;
+    border-radius: 6px;
+    border-left: 3px solid var(--accent-color);
+    transition: all 0.2s ease;
 }
 
 .job:hover {
-    box-shadow: var(--shadow-lg);
-    transform: translateX(5px);
+    box-shadow: var(--shadow-md);
+    transform: translateX(3px);
 }
 
 .job-header {
@@ -183,99 +193,102 @@ p {
     justify-content: space-between;
     align-items: baseline;
     flex-wrap: wrap;
-    gap: 10px;
-    margin-bottom: 5px;
+    gap: 8px;
+    margin-bottom: 4px;
 }
 
 .job h3 {
-    font-size: 1.4rem;
+    font-size: 1.1rem;
     color: var(--text-color);
     margin-bottom: 0;
 }
 
 .duration {
-    color: var(--text-light);
+    color: var(--text-lighter);
     font-weight: 500;
-    font-size: 0.95rem;
+    font-size: 0.85rem;
 }
 
 .company {
-    color: var(--primary-color);
+    color: var(--primary-light);
     font-weight: 600;
-    font-size: 1.1rem;
-    margin-bottom: 15px;
+    font-size: 0.95rem;
+    margin-bottom: 12px;
 }
 
 .job ul {
-    margin-top: 15px;
-    padding-left: 20px;
+    margin-top: 12px;
+    padding-left: 18px;
 }
 
 .job li {
-    margin-bottom: 10px;
+    margin-bottom: 7px;
     color: var(--text-color);
-    line-height: 1.7;
+    line-height: 1.6;
+    font-size: 0.9rem;
 }
 
 /* Projects Section */
 .project {
-    margin-bottom: 30px;
-    padding: 25px;
+    margin-bottom: 22px;
+    padding: 18px;
     background-color: var(--bg-gray);
-    border-radius: 12px;
+    border-radius: 6px;
     border: 1px solid var(--border-color);
-    transition: all 0.3s ease;
+    transition: all 0.2s ease;
 }
 
 .project:hover {
-    box-shadow: var(--shadow-lg);
-    border-color: var(--primary-color);
+    box-shadow: var(--shadow-md);
+    border-color: var(--accent-color);
 }
 
 .project h3 {
     color: var(--primary-color);
-    margin-bottom: 15px;
+    margin-bottom: 10px;
+    font-size: 1.05rem;
 }
 
 .tech-stack {
-    color: var(--text-light);
-    font-size: 0.95rem;
+    color: var(--text-lighter);
+    font-size: 0.85rem;
     font-weight: 500;
-    margin-top: 15px;
-    padding-top: 15px;
+    margin-top: 12px;
+    padding-top: 12px;
     border-top: 1px solid var(--border-color);
 }
 
 /* Contact Section */
 #contact {
     text-align: center;
-    padding: 40px 0;
+    padding: 30px 0;
 }
 
 .contact-links {
     display: flex;
-    gap: 20px;
+    gap: 14px;
     justify-content: center;
-    margin-top: 30px;
+    margin-top: 20px;
     flex-wrap: wrap;
 }
 
 .btn {
     display: inline-block;
-    padding: 14px 32px;
+    padding: 10px 24px;
     background-color: var(--primary-color);
     color: white;
     text-decoration: none;
-    border-radius: 8px;
-    font-weight: 600;
-    transition: all 0.3s ease;
+    border-radius: 4px;
+    font-weight: 500;
+    font-size: 0.9rem;
+    transition: all 0.2s ease;
     box-shadow: var(--shadow);
 }
 
 .btn:hover {
-    background-color: var(--secondary-color);
-    transform: translateY(-2px);
-    box-shadow: var(--shadow-lg);
+    background-color: var(--primary-light);
+    transform: translateY(-1px);
+    box-shadow: var(--shadow-md);
 }
 
 /* Footer */
@@ -283,31 +296,36 @@ footer {
     background-color: var(--text-color);
     color: white;
     text-align: center;
-    padding: 40px 20px;
-    margin-top: 60px;
+    padding: 28px 24px;
+    margin-top: 40px;
+    border-top: 3px solid var(--accent-color);
 }
 
 footer p {
     color: rgba(255, 255, 255, 0.8);
-    font-size: 0.95rem;
+    font-size: 0.88rem;
 }
 
 /* Responsive Design */
 @media (max-width: 768px) {
+    header {
+        padding: 40px 20px 32px;
+    }
+
     header h1 {
-        font-size: 2.2rem;
+        font-size: 2rem;
     }
 
     .tagline {
-        font-size: 1.1rem;
+        font-size: 0.95rem;
     }
 
     h2 {
-        font-size: 1.6rem;
+        font-size: 1.5rem;
     }
 
     h3 {
-        font-size: 1.25rem;
+        font-size: 1.05rem;
     }
 
     .skills-grid {
@@ -326,24 +344,32 @@ footer p {
 
     .btn {
         width: 100%;
-        max-width: 300px;
+        max-width: 280px;
     }
 }
 
 @media (max-width: 480px) {
     header {
-        padding: 60px 20px 40px;
+        padding: 32px 16px 28px;
     }
 
     header h1 {
-        font-size: 1.8rem;
+        font-size: 1.75rem;
     }
 
     main {
-        padding: 40px 20px;
+        padding: 32px 16px;
     }
 
     section {
-        margin-bottom: 40px;
+        margin-bottom: 32px;
+    }
+
+    .job {
+        padding: 16px;
+    }
+
+    .skill-category {
+        padding: 16px;
     }
 }
